@@ -39,7 +39,7 @@ data_long <- pivot_longer(data,
                           values_to = "avg_unemployment_rate")
 
 #create line graph
-ggplot(data_long, aes(x = year, y = avg_unemployment_rate, color = sex, group = sex)) +
+graph <- ggplot(data_long, aes(x = year, y = avg_unemployment_rate, color = sex, group = sex)) +
   geom_line() +
   labs(x = "Year", y = "Average Unemployment Rate", title = "Average Unemployment Rate by Sex In Canada") +
   theme_minimal() +

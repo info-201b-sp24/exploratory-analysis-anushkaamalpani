@@ -5,7 +5,7 @@ library(sf)
 library(maps)
 
 # Import dataset
-global_unemployment_data <- read_csv("Desktop/global_unemployment_data.csv")
+global_unemployment_data <- read.csv("/Users/anushkamalpani/Downloads/data.csv")
 world_map <- map_data("world")
 
 # Averaging unemployment rate for the year 2014
@@ -54,4 +54,3 @@ gg <- ggplot(country_geometry_2014) +
   ggtitle("Unemployment rate by country, divided by tropic") +
   geom_hline(yintercept = 23.43612) + # Tropic of Cancer
   geom_hline(yintercept = -23.43612) # Tropic of Capricorn
-gg

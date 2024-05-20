@@ -3,82 +3,175 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
+## Project title: **Global Unemployment trends**
 
-Give your project a concise, interesting title that summarizes the entirety of your project
 
 ### Authors
 
-Names of your team members
+Alexia Jacobs: alexiaj@uw.edu  
+
+Anushka Malpani: malpani@uw.edu  
+
+Leisha Bajaj: leisha5@uw.edu
 
 ### Date
 
-Winter 2022
+Spring 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+We are concerned with exploring unemployment trends from 2014 to 2024; we chose this topic due to the profound effect unemployment rate can have on global economies. In particular, we will analyze the impact of significant events like the COVID-19 pandemic, the potential impact of the tropic zone, along with the interplay of age and sex with the unemployment rate to gain insights into demographic disparities. We hope that our project will lead to breakthroughs and policies which will better equip society, by plotting different graphs (line graph, tropic zone graph on the world map, and a barplot) that can help policymakers analyse any trends.
+
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+*Unemployment, Ageism, Tropic Zones, Covid-19, Global Economies*
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+Unemployment is a situation wherein a person, who is actively looking for a job, is unable to find work. Unemployment rate is defined as the number of people without work, represented as a percentage of the labor force. It serves as an indicator of the health of the economy. 
+   
+     
+There are many factors that impact unemployment rates, such as a large population, educational levels, state support, infrastructure growth, etc.  
+  
+  
+This project examines unemployment rates from various lenses and perspectives. We plan on exploring the Covid-19 pandemic, tropic zones, and age to find correlations between different countries to understand their influence on unemployment trends.  
+  
+  
+Our research questions therefore are:  
+  
+  
+To what extent was the employment rate between sexes affected by Covid-19 in Canada?  
+  
+  Is there a relationship between tropic zones and unemployment rates?  
+  
+  How does the unemployment rate of different age groups differ between 2014 to 2024 in the United States?
+
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+Our first research question– “To what extent was employment affected by Covid-19 on an international level?”– explores the unemployment rates between different countries during the COVID-19 pandemic. Edwards et al., 2022 is a research article that explores similar data, and details the increase of employment rates during this time, providing a reliable and relevant source to our project.   
+
+Our second research question– “Is there a relationship between tropic zones and unemployment rates?”– aims to investigate whether there is a relationship between the tropic a country is in, and its respective unemployment rate. The research article below analyzes a range of environmental, social, and economic indicators (including unemployment rate) in the tropical zone (Archer et al., 2020).  
+
+Our third research question–“How does the unemployment rate of different age groups differ between 2014 to 2024 in the United States?”– examines the correlation between age and the likelihood of being unemployed. We plan to explore whether age affects employment opportunities, and investigate if there is any evidence of 'ageism' across various countries. This could help reveal whether workers of different ages face systemic biases when seeking employment. The research paper analyzes past data to find a trend in unemployment. (Axelrad et al., 2018).
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+> Where did you find the data? Please include a link to the data source  
 
-### Implications
+**Data Source**: Kaggle – [Global Unemployment dataset](https://www.kaggle.com/sazidulislam/global-unemployment)
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+> Who collected the data?
 
-### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+**Data Collection**: Collected by ILO, posted on Kaggle by Sazidul Islam
+
+> How was the data collected or generated?  
+
+**Data Collection Method**:This dataset was tabulated from the data collected by the ILO. It is updated every year by the author of this post
+
+> Why was the data collected?  
+
+**Purpose of Data Collection**: To measure changes in employment across 189 countries/regions over 11 years. It evaluates unemployment trends based on sex and age groups.
+
+>How many observations (rows) are in your data?
+
+**Observations (rows)**: 1,135
+
+> How many features (columns) are in the data?  
+
+**Features (columns)**: 16
+
+> What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+
+- Is there transparency in the method of collection of these data points?
+- Due to the large time frame of the data, how do we ensure the same or similar data collection strategies were used throughout?
+- Additionally, as the data was collected over the course of several decades, it is safe to assume that different lead researchers were employed in data collection. Such variation in principal investigators could lead to bias snowballs and bias cascades, as the different prejudices of each researcher could’ve aggregated over the years, affecting the quality of the data. As such, how do we ensure all potential biases are declared and accounted for?
+
+> What are possible limitations or problems with this data?   (at least 200 words)
+
+It does not provide a holistic view of unemployment rates, as all data is numeric with no description given of how exactly this data was collected or what factors were taken into consideration during data collection.   
+
+In addition, the data collected is the mean calculated over the course of a year rather than collecting exact data per month. This can cause problems with exact data values and reliability.  Fluctuations within unemployment rates over a shorter period of time are not visible in this data set. Relying entirely on yearly averages can hide important trends and variations that occur throughout the year. For example, jobs with seasonal fluctuations, weather cycles, and economic cycles can affect employment rates on a monthly basis. With this data these fluctuations are not shown and are ignored. This makes the data provided less specific.   
+
+The process of copying data from the ILO LFS database and then sourcing it to present on Kaggle can lead to loss of detail or granularity in the dataset. For example, there may have been reformatting of the data by the author of the dataset which may have unintentionally led to loss of important data.  
+
+We also cannot control the groupings of age variables. The dataset also does not give the overall unemployment of the country, only the unemployment rates per age division.
+
+4. Implications
+
+
+A possible implication for technologists is that if we manage to find conclusive answers for our research questions, our project can be used as an example of how important and relevant data science is to our society. Any major error on our part in doing this analysis could affect the societal perspective of data science as a whole, which could potentially discourage people from working in this field in the future.  
+
+The possible implications for designers are similar. Our project and its conclusions need to be easily understandable and clear, even to people who might not have a background in data science or economics. If the analysis is overly complicated and not concise, it would serve as a bad example of project design and project designers.  
+
+As for policymakers, seeing unemployment trends could help understand how to avoid situations where unemployment increases, and help limit the increase in unemployment during economically challenging times. It could also lead to future policies which safeguard employee rights, particularly in the context of layoffs.
+
+
+
+5. Limitations & Challenges
+
+Our data also does not include the primary reason for unemployment. There is a phenomenon called “Long Covid” where people who have been infected with the Coronavirus struggle to return to regular function. In 2021, the federal government clarified that Long Covid could be considered a disability under Titles I, II, and III (Long COVID-19 and Disability Accommodations in the Workplace, 2024). This could affect unemployment rates as a person cannot be employed if they cannot undertake the responsibilities associated with that position; employers are also usually hesitant to hire people who require accommodations. However, as there is little research done on Long Covid, it is unclear how exactly it could affect unemployment rate.   
+
+It is also important to mention that tropic zones are a concept used primarily in geography, in an attempt to categorize countries based on their climate. It is usually not a factor when making economic decisions.   
+
+The lack of other demographic information, such as education status, when comparing the likelihood of employment with age, makes it harder to accurately predict employment trends. Without these additional variables, it's challenging to understand the complex factors that influence employment outcomes and this can lead to incomplete or misleading conclusions.
+
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script  
+```{r summary, echo=FALSE, message=FALSE}
+source("summary.R")
+print(summary)
+```
+This summary calculates the number of countries, the number of rows, the number of columns, the maximum unemployment rate, and the minimum unemployment rate. Our dataset contains 189 countries, 1134 rows, 16 columns, and the maximum unemployment rate is 74.485% while the minimum unemployment rate is 0.027%. We hope this summarized data will help us with doing the calculations and creating the charts for our research questions.
 
 ### Table
 
 Include a table of aggregate information
 
-Describe why you included the table and what information it reveals
+```{r sumtable2, echo=FALSE}
+source("table.R")
+aggregate_table %>%
+  kable(format = "html", caption = "Aggregate Unemployment Rates by Country (2014)") %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE)
+```
+
+Describe why you included the table and what information it reveals  
+
+This table is an aggregate table of unemployment rates, grouped by country and rounded to 2 decimal places. This allowed us to get a better understanding of which countries had greater or lesser overall unemployment rates – overall in this context means not separated by sex or age group. We chose the year 2014 for this aggregate table simply because it is the first year for which this dataset recorded data. 
+
 
 ### Chart 1
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, message = FALSE}
+source("chart1_Covid.R")
+plot(graph)
 ```
+
+Describe why you chose this chart and what information it reveals  
+  
+  We chose this double line graph to represent the comparison of unemployment rates between sex in Canada from 2017 to 2022 and to illustrate the impact of the COVID-19 pandemic. This type of visualization allows us to clearly see how unemployment rates fluctuate during the pandemic years. As you can see, both lines show a spike in unemployment in 2020. The red line represents the linear regression of unemployment rates for females over the years, while the blue line represents the same trend for males.
 
 ### Chart 2
 
-Include a chart
+```{r, echo = FALSE, message = FALSE}
+source("chart2_tropics.R")
+plot(gg)
+```
 
-Describe why you chose this chart and what information it reveals
+Describe why you chose this chart and what information it reveals  
+  
+  I chose to display the information regarding each country’s unemployment rate on a map, as I thought that would better visualize how the unemployment rate differs by geographical region in 2014. The two horizontal lines depict the tropic of Cancer and the tropic of Capricorn, as our research question was “Is there a relationship between tropic zones and unemployment rates?”. As we can see in this graph, the highest unemployment rates are located in south Africa, north Africa, and eastern Europe. More specifically, some of the highest unemployment rates are located close to where the tropic lines are, at 23.43612° North and South. Therefore, this chart indicates there may be a correlation between tropic lines and unemployment rates in the year 2014.
 
 ### Chart 3
 
-Include a chart
+```{r, echo = FALSE, message = FALSE}
+source("chart3_age.R")
+plot(us_avg_24_graph)
+```
 
-Describe why you chose this chart and what information it reveals
+Describe why you chose this chart and what information it reveals  
+  
+  This is a bar plot that compares the average unemployment rate among the age categories of Children (less than 15 years), Youth (15 years to 24 years), and Adults (25+ years). This graph is for the year 2024 in the United States. I chose this chart because a bar plot provides a clear visual comparison of categorical data,which makes it easy to see the differences in average unemployment rates across the defined age groups. The distinct bars allow us to quickly identify which age category experiences the highest and lowest unemployment rates. It is evident that the youth face the highest unemployment, followed by 'Children' and 'Adults,' it suggests that young people entering the job market out of college or even high school face the most challenges, whereas older adults have relatively stable employment. This can help policymakers identify and design economic strategies favoring their employment. Over here in the US, they can introduce policies that focus on job training programs or educational initiatives for young people.The barplot also gives us insight that children under the age of 15 facing unemployment may not be in school studying. This could indicate issues such as child labor or lack of access to education, which brings out the issue of children not receiving proper education and being part of the labor force.
