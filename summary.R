@@ -4,7 +4,7 @@ library(tidyverse)
 library(kableExtra)
 library(stringr)
 
-global_unemployment_data <- read.csv("/Users/anushkamalpani/Downloads/data.csv")
+global_unemployment_data <- read.csv("https://raw.githubusercontent.com/info-201b-sp24/exploratory-analysis-anushkaamalpani/main/data.csv")
 
 summary <- list(
   num_observations = nrow(global_unemployment_data),

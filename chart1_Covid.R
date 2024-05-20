@@ -3,7 +3,7 @@ library(readr)
 library(ggplot2)
 library(dplyr)
 #load data 
-dataframe <- read.csv("/Users/anushkamalpani/Downloads/data.csv")
+dataframe <- read.csv("https://raw.githubusercontent.com/info-201b-sp24/exploratory-analysis-anushkaamalpani/main/data.csv")
 
 #filter Canada Rows
 q_1_canada <- dataframe[175:180,]

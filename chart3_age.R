@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 # Load the dataframe
-data <- read.csv("/Users/anushkamalpani/Downloads/data.csv")
+data <- read.csv("https://raw.githubusercontent.com/info-201b-sp24/exploratory-analysis-anushkaamalpani/main/data.csv")
 
 # Step 1: Filter for the United States
 us_data <- filter(data, country_name == "United States")

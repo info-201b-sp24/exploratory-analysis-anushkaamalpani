@@ -5,7 +5,7 @@ library(sf)
 library(maps)
 
 # Import dataset
-global_unemployment_data <- read.csv("/Users/anushkamalpani/Downloads/data.csv")
+global_unemployment_data <- read.csv("https://raw.githubusercontent.com/info-201b-sp24/exploratory-analysis-anushkaamalpani/main/data.csv")
 world_map <- map_data("world")
 
 # Averaging unemployment rate for the year 2014
